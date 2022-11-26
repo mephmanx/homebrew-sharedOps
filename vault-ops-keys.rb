@@ -14,9 +14,7 @@ class VaultOpsKeys < Formula
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
-    system "./configure", *std_configure_args, "--disable-silent-rules"
-    # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-    bin.install "vault-ops-keys"
+    bin.install "show-keys.sh"
     bin.install Dir["files"]
     prefix.install "README.md"
     prefix.install "LICENSE"
@@ -32,6 +30,6 @@ class VaultOpsKeys < Formula
     #
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system "#{bin}/program", "do", "something"`.
-    system "false"
+    system "#{bin}/show-keys.sh", "--help"
   end
 end
