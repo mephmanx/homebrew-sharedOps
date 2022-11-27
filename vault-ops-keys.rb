@@ -9,7 +9,7 @@ class VaultOpsKeys < Formula
 
   def install
     bin.install "show-keys.sh"
-    prefix.install Dir["files"]
+    prefix.install "files"
   end
 
   test do
