@@ -8,10 +8,8 @@ class VaultOpsKeys < Formula
   depends_on "vault"
 
   def install
-    libexec.install Dir["*"]
-    bin.write_exec_script libexec/"show-keys.sh"
-    prefix.install "README.md"
-    prefix.install "LICENSE"
+    bin.install "show-keys.sh"
+    prefix.install Dir["files"]
   end
 
   test do
