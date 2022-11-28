@@ -21,7 +21,7 @@ This script displays the values of a pre-configured set of secrets from an enter
 - Provide the github token, vault target, and keys list to the script.
 
 ```sh
-show-keys.sh -g|--githubToken <githubToken> -t|--vaultTarget <vaultTarget> -k|--keysList <keysList>
+show-keys.sh -g|--githubToken <github PAT token> -t|--vaultTarget <vault target> -k|--keysList <keys list> -o|--githubOrg <github org>
 ```
 
 ## About Licensing
