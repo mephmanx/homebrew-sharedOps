@@ -2,7 +2,7 @@ class VaultOpsKeys < Formula
   desc "Script to show keys from a list from Enterprise Vault instance"
   homepage "https://www.suncoast.systems/homebrew-sharedOps/"
   url "https://github.com/dotcomrow/vault-ops-keys/archive/refs/tags/v1.5.tar.gz"
-  sha256 "a1f527465c1e2daea06393b8cc5820ffc9dd5c41baa1ae0152be710ff0007bdf"
+  sha256 "a5e55645b28105bebe0d69d766dc15e304c83c92a5e6043c60954db63e468b3b"
   license "MIT"
 
   depends_on "vault"
